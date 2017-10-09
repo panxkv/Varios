@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.2'
-gem 'bootstrap'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'sqlite3'
