@@ -25,7 +25,8 @@ tmp/*
 doc/api
 doc/app
 *.swp
-*~
+/.idea/*
+
 .DS_Store
 
 /node_modules
