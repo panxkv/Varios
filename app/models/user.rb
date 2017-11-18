@@ -8,4 +8,8 @@ class User < ApplicationRecord
   def twitter
     self.connections.where(provider: "twitter").first
   end
+
+  def facebook
+    self.connections.where(provider: 'facebook').first
+  end
 end

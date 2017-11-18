@@ -20,8 +20,13 @@ gem 'simple_form'
 gem 'devise'
 gem 'dotenv-rails'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook', '~> 4.0'
 gem 'pry-rails'
-gem 'validates_timeliness', '~>3.0'
+gem 'twitter'
+gem 'koala'
+
+
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

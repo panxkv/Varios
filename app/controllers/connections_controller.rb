@@ -16,6 +16,7 @@ class ConnectionsController < ApplicationController
   end
 
   def omniauth_failure
+    # binding.pry
     redirect_to dashboard_path, notice: "Something went wrong!"
   end
 
