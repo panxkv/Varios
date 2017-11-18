@@ -21,6 +21,7 @@ gem 'devise'
 gem 'dotenv-rails'
 gem 'omniauth-twitter'
 gem 'pry-rails'
+gem 'validates_timeliness', '~>3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
