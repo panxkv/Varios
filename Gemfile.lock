@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/thebestday/delayed-web.git
+  revision: 283249d00ef2eac86fc40f9bd43124ff4f21741c
+  specs:
+    delayed-web (0.4.4)
+      rails (>= 3.2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,6 +77,11 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    delayed_job (4.1.3)
+      activesupport (>= 3.0, < 5.2)
+    delayed_job_active_record (4.1.2)
+      activerecord (>= 3.0, < 5.2)
+      delayed_job (>= 3.0, < 5)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -278,6 +290,8 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  delayed-web!
+  delayed_job_active_record
   devise
   dotenv-rails
   font-awesome-rails

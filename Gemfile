@@ -24,9 +24,8 @@ gem 'omniauth-facebook', '~> 4.0'
 gem 'pry-rails'
 gem 'twitter'
 gem 'koala'
-
-
-
+gem 'delayed_job_active_record'
+gem 'delayed-web', github: 'thebestday/delayed-web'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
