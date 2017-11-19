@@ -7,7 +7,7 @@ end
 
 gem 'rails', '~> 5.1.2'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
@@ -26,6 +26,8 @@ gem 'twitter'
 gem 'koala'
 gem 'delayed_job_active_record'
 gem 'delayed-web', github: 'thebestday/delayed-web'
+gem 'omniauth-linkedin-oauth2'
+gem 'linkedin-oauth2', github: 'emorikawa/linkedin-oauth2', ref: 'ceb63460b8b45b7e00766ae3a4c3e361d76c6ffc'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

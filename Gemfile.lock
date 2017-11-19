@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/emorikawa/linkedin-oauth2.git
+  revision: ceb63460b8b45b7e00766ae3a4c3e361d76c6ffc
+  ref: ceb63460b8b45b7e00766ae3a4c3e361d76c6ffc
+  specs:
+    linkedin-oauth2 (1.0.0)
+      faraday (~> 0.9)
+      hashie (~> 3.2)
+      oauth2 (~> 1.0)
+
+GIT
   remote: https://github.com/thebestday/delayed-web.git
   revision: 283249d00ef2eac86fc40f9bd43124ff4f21741c
   specs:
@@ -162,6 +172,9 @@ GEM
       rack (>= 1.6.2, < 3)
     omniauth-facebook (4.0.0)
       omniauth-oauth2 (~> 1.2)
+    omniauth-linkedin-oauth2 (0.2.5)
+      omniauth (~> 1.0)
+      omniauth-oauth2
     omniauth-oauth (1.1.0)
       oauth
       omniauth (~> 1.0)
@@ -298,8 +311,10 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   koala
+  linkedin-oauth2!
   listen (>= 3.0.5, < 3.2)
   omniauth-facebook (~> 4.0)
+  omniauth-linkedin-oauth2
   omniauth-twitter
   pry-rails
   puma (~> 3.7)

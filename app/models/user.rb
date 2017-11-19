@@ -6,10 +6,14 @@ class User < ApplicationRecord
   has_many :posts, dependent: :destroy
 
   def twitter
-    self.connections.where(provider: "twitter").first
+    self.connections.where(provider: 'twitter').first
   end
 
   def facebook
     self.connections.where(provider: 'facebook').first
+  end
+
+  def linkedin
+    self.connections.where(provider: 'linkedin').first
   end
 end

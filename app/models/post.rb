@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
   belongs_to :user
 
+
   validates_presence_of :content
   validates_presence_of :scheduled_at
   validates_length_of :content, maximum: 140, message: 'Less then 140 characters please'
@@ -23,6 +24,9 @@ class Post < ApplicationRecord
       if facebook == true
         to_facebook
       end
+      if to_linkedin == true
+        to_linkedin
+      end
       self.update_attributes(state: "posted")
     rescue Exception => e
       self.update_attributes(state: "posting error", error: e.message)
@@ -42,5 +46,10 @@ class Post < ApplicationRecord
   def to_facebook
     graph = Koala::Facebook::API.new(self.user.facebook.oauth_token)
     graph.put_connections("me", "feed", message: self.content)
+  end
+
+  def to_linkedin
+    api = LinkedIn::API.new(self.user.linkedin.oauth_token)
+    api.add_share(comment: self.content)
   end
 end
