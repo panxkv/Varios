@@ -21,6 +21,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:content, :scheduled_at, :state, :user_id, :facebook, :twitter)
+    params.require(:post).permit(:content, :scheduled_at, :state, :user_id, :facebook, :twitter, :linkedin)
   end
 end

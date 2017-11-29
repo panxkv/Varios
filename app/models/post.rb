@@ -1,7 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :user
 
-
   validates_presence_of :content
   validates_presence_of :scheduled_at
   validates_length_of :content, maximum: 140, message: 'Less then 140 characters please'
@@ -24,7 +23,7 @@ class Post < ApplicationRecord
       if facebook == true
         to_facebook
       end
-      if to_linkedin == true
+      if linkedin == true
         to_linkedin
       end
       self.update_attributes(state: "posted")
